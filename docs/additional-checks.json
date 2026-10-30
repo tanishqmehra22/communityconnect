@@ -1,0 +1,9 @@
+{
+  "passed": 4,
+  "checks": [
+    "Clipboard share copies the correct resource link",
+    "Unavailable clipboard shows a selectable link",
+    "Demo JSON download contains six structured records",
+    "Organization inquiry preselects the contact category"
+  ]
+}

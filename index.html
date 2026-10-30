@@ -1,0 +1,1795 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="web_standard" name="shell-type" />
+    <title>Home | CommunityConnect</title>
+    <meta
+      name="description"
+      content="CommunityConnect: discover neighborhood resources, community events, and volunteer opportunities. A bilingual portfolio demonstration."
+    />
+    <meta name="theme-color" content="#003535" />
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="css/stitch.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <script type="module" src="js/app.js"></script>
+  </head>
+  <body
+    class="bg-surface font-body-md text-on-surface antialiased"
+    data-page="index"
+  >
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="brand" data-path="home" href="index.html"
+          ><img
+            alt=""
+            class="h-8 w-auto object-contain"
+            src="assets/favicon.svg"
+            decoding="async"
+            width="30"
+            height="30"
+          /><span
+            class="font-headline-sm text-headline-sm text-primary tracking-tight"
+            >CommunityConnect</span
+          ></a
+        >
+        <nav class="desktop-nav" aria-label="Main navigation">
+          <a href="index.html" aria-current="page">Home</a
+          ><a href="resources.html">Resource Directory</a
+          ><a href="events.html">Events</a><a href="about.html">About Us</a
+          ><a href="contact.html">Contact</a>
+        </nav>
+        <div class="header-actions">
+          <div class="language-toggle" aria-label="Language">
+            <button type="button" data-lang="en" lang="en" aria-label="English">
+              EN</button
+            ><button
+              type="button"
+              data-lang="es"
+              lang="es"
+              aria-label="Español"
+            >
+              ES
+            </button>
+          </div>
+          <a class="get-involved" href="about.html#volunteer">Get Involved</a
+          ><button
+            class="menu-toggle"
+            aria-label="Open navigation"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+            type="button"
+          >
+            <span class="material-symbols-outlined" aria-hidden="true"
+              >menu</span
+            >
+          </button>
+        </div>
+      </div>
+      <nav
+        id="mobile-menu"
+        class="mobile-menu"
+        aria-label="Mobile navigation"
+        hidden=""
+      >
+        <a href="index.html" aria-current="page">Home</a
+        ><a href="resources.html">Resource Directory</a
+        ><a href="events.html">Events</a><a href="about.html">About Us</a
+        ><a href="contact.html">Contact</a>
+      </nav>
+    </header>
+    <main class="w-full pt-20 bg-surface" id="main-content" tabindex="-1">
+      <div class="demo-notice">
+        <span class="demo-dot" aria-hidden="true"></span
+        ><span
+          >Portfolio demo · Fictional organizations, statistics, locations, and
+          contact details. No real services or registrations.</span
+        >
+      </div>
+      <div class="flex flex-col w-full">
+        <!-- Hero Section -->
+        <section
+          class="relative w-full overflow-hidden bg-gradient-to-b from-surface-container-low via-surface to-background px-gutter py-space-xl lg:py-24"
+        >
+          <!-- Ambient Civic Backdrop Blobs -->
+          <div
+            class="absolute -top-32 -left-32 w-96 h-96 rounded-full bg-secondary-container/40 blur-3xl pointer-events-none"
+          ></div>
+          <div
+            class="absolute top-1/2 -right-24 w-80 h-80 rounded-full bg-tertiary-fixed/30 blur-3xl pointer-events-none"
+          ></div>
+          <div
+            class="max-w-6xl mx-auto flex flex-col items-center text-center relative z-10"
+          >
+            <!-- Civic Ward Status Pill -->
+            <div
+              class="inline-flex items-center gap-space-xs px-space-md py-1.5 rounded-full bg-surface-container-lowest shadow-sm mb-space-lg text-primary"
+            >
+              <span
+                class="inline-block w-2 h-2 rounded-full bg-secondary animate-pulse"
+              ></span>
+              <span
+                class="font-label-sm text-label-sm uppercase tracking-wider text-secondary"
+                >Community Demo Network</span
+              >
+              <span class="text-outline-variant">•</span>
+              <span class="font-label-md text-label-md text-on-surface"
+                >Connecting Neighbors Across 24 Wards</span
+              >
+            </div>
+            <!-- Main Headline -->
+            <h1
+              class="font-display-hero text-display-hero text-on-surface max-w-4xl tracking-tight mb-space-md"
+            >
+              Stronger Communities
+              <span class="text-primary italic font-serif">Start Here.</span>
+            </h1>
+            <p
+              class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mb-space-xl"
+            >
+              Discover essential local services, join community events, and find
+              high-impact volunteer opportunities in your neighborhood.
+            </p>
+            <!-- Multi-Parameter Search Container -->
+            <div
+              class="w-full max-w-4xl bg-surface-container-lowest rounded-2xl p-3 shadow-xl"
+            >
+              <form
+                class="flex flex-col md:flex-row items-center gap-2"
+                id="hero-search-form"
+              >
+                <!-- Text Search Field -->
+                <div
+                  class="relative flex-1 w-full flex items-center px-4 py-3 rounded-xl bg-surface-container-low focus-within:bg-surface-container-lowest transition-colors"
+                >
+                  <span
+                    class="material-symbols-outlined text-secondary mr-3 text-[22px]"
+                    aria-hidden="true"
+                    >search</span
+                  >
+                  <input
+                    aria-label="Search services"
+                    class="w-full bg-transparent font-body-md text-body-md text-on-surface placeholder:text-on-surface-variant/70 focus:outline-none"
+                    id="search-input"
+                    placeholder="What service or support do you need? (e.g., Food pantry, ESL classes, Childcare)"
+                    type="text"
+                    name="search-input"
+                    maxlength="150"
+                  />
+                </div>
+                <!-- Ward / Location Dropdown -->
+                <div
+                  class="relative w-full md:w-64 flex items-center px-4 py-3 rounded-xl bg-surface-container-low focus-within:bg-surface-container-lowest transition-colors"
+                >
+                  <span
+                    class="material-symbols-outlined text-secondary mr-2 text-[20px]"
+                    aria-hidden="true"
+                    >location_on</span
+                  >
+                  <select
+                    aria-label="Filter by Ward"
+                    class="w-full bg-transparent font-label-md text-label-md text-on-surface cursor-pointer focus:outline-none appearance-none pr-6"
+                    id="ward-selector"
+                    name="ward-selector"
+                  >
+                    <option value="all">All 24 Neighborhoods</option>
+                    <option value="northside">Northside (Wards 1-6)</option>
+                    <option value="west-ward">West Ward (Wards 7-12)</option>
+                    <option value="downtown">
+                      Downtown Core (Wards 13-18)
+                    </option>
+                    <option value="riverside">Riverside (Wards 19-24)</option>
+                  </select>
+                  <span
+                    class="material-symbols-outlined text-on-surface-variant absolute right-3 pointer-events-none text-[18px]"
+                    aria-hidden="true"
+                    >expand_more</span
+                  >
+                </div>
+                <!-- CTA Button -->
+                <button
+                  class="w-full md:w-auto px-space-lg py-3.5 rounded-xl bg-primary text-on-primary font-label-md text-label-md flex items-center justify-center gap-2 shadow-md hover:bg-primary-container transition-all hover:scale-[1.01] active:scale-[0.99] whitespace-nowrap"
+                  type="submit"
+                >
+                  <span>Find Resources</span>
+                  <span
+                    class="material-symbols-outlined text-[18px]"
+                    aria-hidden="true"
+                    >arrow_forward</span
+                  >
+                </button>
+              </form>
+            </div>
+            <!-- Trending Quick Search Tags -->
+            <div
+              class="flex flex-wrap items-center justify-center gap-2 mt-space-md text-left"
+            >
+              <span
+                class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider flex items-center gap-1"
+              >
+                <span
+                  class="material-symbols-outlined text-[16px] text-tertiary-container"
+                  aria-hidden="true"
+                  >trending_up</span
+                >
+                Trending:
+              </span>
+              <button
+                class="trending-tag px-3 py-1 rounded-full bg-surface-container text-on-surface font-label-sm text-label-sm hover:bg-secondary-container hover:text-on-secondary-container transition-colors"
+                type="button"
+                data-search="food"
+              >
+                Food Assistance
+              </button>
+              <button
+                class="trending-tag px-3 py-1 rounded-full bg-surface-container text-on-surface font-label-sm text-label-sm hover:bg-secondary-container hover:text-on-secondary-container transition-colors"
+                type="button"
+                data-search="clinic"
+              >
+                Free Clinic
+              </button>
+              <button
+                class="trending-tag px-3 py-1 rounded-full bg-surface-container text-on-surface font-label-sm text-label-sm hover:bg-secondary-container hover:text-on-secondary-container transition-colors"
+                type="button"
+                data-search="education"
+              >
+                Youth Mentorship
+              </button>
+              <button
+                class="trending-tag px-3 py-1 rounded-full bg-surface-container text-on-surface font-label-sm text-label-sm hover:bg-secondary-container hover:text-on-secondary-container transition-colors"
+                type="button"
+                data-search="housing"
+              >
+                Housing Vouchers
+              </button>
+              <button
+                class="trending-tag px-3 py-1 rounded-full bg-surface-container text-on-surface font-label-sm text-label-sm hover:bg-secondary-container hover:text-on-secondary-container transition-colors"
+                type="button"
+                data-search="senior"
+              >
+                Senior Care
+              </button>
+            </div>
+          </div>
+        </section>
+        <!-- Service Categories Directory Grid -->
+        <section class="w-full px-gutter py-space-xl bg-surface">
+          <div class="max-w-7xl mx-auto">
+            <div
+              class="flex flex-col md:flex-row md:items-end justify-between mb-space-xl gap-4"
+            >
+              <div>
+                <div
+                  class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm mb-2"
+                >
+                  <span
+                    class="material-symbols-outlined text-[15px]"
+                    aria-hidden="true"
+                    >grid_view</span
+                  >
+                  Sample Service Areas
+                </div>
+                <h2 class="font-headline-lg text-headline-lg text-on-surface">
+                  Community Resource Directories
+                </h2>
+                <p
+                  class="font-body-md text-body-md text-on-surface-variant max-w-xl"
+                >
+                  Continuously updated and audited services offering direct
+                  casework, walk-in hours, and no-cost neighborhood aid.
+                </p>
+              </div>
+              <a
+                class="inline-flex items-center gap-2 font-label-md text-label-md text-primary hover:text-secondary transition-colors self-start md:self-end group"
+                data-path="resource-directory"
+                href="resources.html"
+              >
+                <span>Browse Complete Directory</span>
+                <span
+                  class="material-symbols-outlined text-[18px] group-hover:translate-x-1 transition-transform"
+                  aria-hidden="true"
+                  >east</span
+                >
+              </a>
+            </div>
+            <!-- 6 Service Bento Cards -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              <!-- 1. Food Assistance -->
+              <a
+                class="group relative bg-surface-container-lowest rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between overflow-hidden"
+                data-path="food-assistance"
+                href="resources.html?category=food"
+              >
+                <div
+                  class="absolute top-0 right-0 w-28 h-28 bg-secondary-container/20 rounded-bl-full pointer-events-none group-hover:scale-110 transition-transform"
+                ></div>
+                <div>
+                  <div class="flex items-center justify-between mb-5">
+                    <div
+                      class="w-12 h-12 rounded-xl bg-secondary-container text-on-secondary-container flex items-center justify-center"
+                    >
+                      <span
+                        class="material-symbols-outlined text-[26px]"
+                        aria-hidden="true"
+                        >nutrition</span
+                      >
+                    </div>
+                    <span
+                      class="px-2.5 py-1 rounded-full bg-secondary-container/60 text-on-secondary-container font-label-sm text-label-sm font-semibold"
+                    >
+                      38 Active Centers
+                    </span>
+                  </div>
+                  <h3
+                    class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors mb-2"
+                  >
+                    Food Assistance
+                  </h3>
+                  <p
+                    class="font-body-sm text-body-sm text-on-surface-variant mb-4"
+                  >
+                    Daily walk-in pantries, weekend community soup kitchens,
+                    SNAP enrollment assistance, and mobile grocery vans.
+                  </p>
+                </div>
+                <div
+                  class="pt-4 flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm"
+                >
+                  <span class="flex items-center gap-1"
+                    ><span
+                      class="material-symbols-outlined text-[16px] text-secondary"
+                      aria-hidden="true"
+                      >schedule</span
+                    >
+                    Mon - Sat Walk-in</span
+                  >
+                  <span
+                    class="text-primary font-semibold flex items-center gap-0.5 group-hover:translate-x-1 transition-transform"
+                    >Explore
+                    <span
+                      class="material-symbols-outlined text-[16px]"
+                      aria-hidden="true"
+                      >chevron_right</span
+                    ></span
+                  >
+                </div>
+              </a>
+              <!-- 2. Healthcare & Wellness -->
+              <a
+                class="group relative bg-surface-container-lowest rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between overflow-hidden"
+                data-path="healthcare-access"
+                href="resources.html?category=healthcare"
+              >
+                <div
+                  class="absolute top-0 right-0 w-28 h-28 bg-surface-container-high/30 rounded-bl-full pointer-events-none group-hover:scale-110 transition-transform"
+                ></div>
+                <div>
+                  <div class="flex items-center justify-between mb-5">
+                    <div
+                      class="w-12 h-12 rounded-xl bg-primary-fixed text-on-primary-fixed flex items-center justify-center"
+                    >
+                      <span
+                        class="material-symbols-outlined text-[26px]"
+                        aria-hidden="true"
+                        >health_and_safety</span
+                      >
+                    </div>
+                    <span
+                      class="px-2.5 py-1 rounded-full bg-surface-container-high text-on-surface font-label-sm text-label-sm font-semibold"
+                    >
+                      24 Local Clinics
+                    </span>
+                  </div>
+                  <h3
+                    class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors mb-2"
+                  >
+                    Healthcare &amp; Wellness
+                  </h3>
+                  <p
+                    class="font-body-sm text-body-sm text-on-surface-variant mb-4"
+                  >
+                    Community clinics with sliding scales, mobile dental
+                    checkups, mental health counseling, and prescription
+                    assistance.
+                  </p>
+                </div>
+                <div
+                  class="pt-4 flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm"
+                >
+                  <span class="flex items-center gap-1"
+                    ><span
+                      class="material-symbols-outlined text-[16px] text-secondary"
+                      aria-hidden="true"
+                      >badge</span
+                    >
+                    Sliding-Scale / Free</span
+                  >
+                  <span
+                    class="text-primary font-semibold flex items-center gap-0.5 group-hover:translate-x-1 transition-transform"
+                    >Explore
+                    <span
+                      class="material-symbols-outlined text-[16px]"
+                      aria-hidden="true"
+                      >chevron_right</span
+                    ></span
+                  >
+                </div>
+              </a>
+              <!-- 3. Housing Support -->
+              <a
+                class="group relative bg-surface-container-lowest rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between overflow-hidden"
+                data-path="housing-navigation"
+                href="resources.html?category=housing"
+              >
+                <div
+                  class="absolute top-0 right-0 w-28 h-28 bg-tertiary-fixed/30 rounded-bl-full pointer-events-none group-hover:scale-110 transition-transform"
+                ></div>
+                <div>
+                  <div class="flex items-center justify-between mb-5">
+                    <div
+                      class="w-12 h-12 rounded-xl bg-tertiary-fixed text-tertiary flex items-center justify-center"
+                    >
+                      <span
+                        class="material-symbols-outlined text-[26px]"
+                        aria-hidden="true"
+                        >home_work</span
+                      >
+                    </div>
+                    <span
+                      class="px-2.5 py-1 rounded-full bg-tertiary-fixed/50 text-tertiary-container font-label-sm text-label-sm font-semibold"
+                    >
+                      19 Desks &amp; Shelters
+                    </span>
+                  </div>
+                  <h3
+                    class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors mb-2"
+                  >
+                    Housing Support
+                  </h3>
+                  <p
+                    class="font-body-sm text-body-sm text-on-surface-variant mb-4"
+                  >
+                    Emergency bed locators, tenant eviction advocacy desks,
+                    utility assistance grants, and affordable housing lotteries.
+                  </p>
+                </div>
+                <div
+                  class="pt-4 flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm"
+                >
+                  <span class="flex items-center gap-1"
+                    ><span
+                      class="material-symbols-outlined text-[16px] text-tertiary-container"
+                      aria-hidden="true"
+                      >bed</span
+                    >
+                    Sample Intake Hours</span
+                  >
+                  <span
+                    class="text-primary font-semibold flex items-center gap-0.5 group-hover:translate-x-1 transition-transform"
+                    >Explore
+                    <span
+                      class="material-symbols-outlined text-[16px]"
+                      aria-hidden="true"
+                      >chevron_right</span
+                    ></span
+                  >
+                </div>
+              </a>
+              <!-- 4. Education & Youth -->
+              <a
+                class="group relative bg-surface-container-lowest rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between overflow-hidden"
+                data-path="education-resources"
+                href="resources.html?category=education"
+              >
+                <div
+                  class="absolute top-0 right-0 w-28 h-28 bg-secondary-container/20 rounded-bl-full pointer-events-none group-hover:scale-110 transition-transform"
+                ></div>
+                <div>
+                  <div class="flex items-center justify-between mb-5">
+                    <div
+                      class="w-12 h-12 rounded-xl bg-secondary-fixed text-on-secondary-fixed flex items-center justify-center"
+                    >
+                      <span
+                        class="material-symbols-outlined text-[26px]"
+                        aria-hidden="true"
+                        >school</span
+                      >
+                    </div>
+                    <span
+                      class="px-2.5 py-1 rounded-full bg-secondary-container/60 text-on-secondary-container font-label-sm text-label-sm font-semibold"
+                    >
+                      42 Youth Hubs
+                    </span>
+                  </div>
+                  <h3
+                    class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors mb-2"
+                  >
+                    Education &amp; Youth
+                  </h3>
+                  <p
+                    class="font-body-sm text-body-sm text-on-surface-variant mb-4"
+                  >
+                    Free after-school tutoring, STEM workshops, bilingual
+                    reading clubs, summer youth camps, and GED prep centers.
+                  </p>
+                </div>
+                <div
+                  class="pt-4 flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm"
+                >
+                  <span class="flex items-center gap-1"
+                    ><span
+                      class="material-symbols-outlined text-[16px] text-secondary"
+                      aria-hidden="true"
+                      >family_restroom</span
+                    >
+                    K–12 &amp; Adult Education</span
+                  >
+                  <span
+                    class="text-primary font-semibold flex items-center gap-0.5 group-hover:translate-x-1 transition-transform"
+                    >Explore
+                    <span
+                      class="material-symbols-outlined text-[16px]"
+                      aria-hidden="true"
+                      >chevron_right</span
+                    ></span
+                  >
+                </div>
+              </a>
+              <!-- 5. Employment & Job Training -->
+              <a
+                class="group relative bg-surface-container-lowest rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between overflow-hidden"
+                data-path="employment-support"
+                href="resources.html?category=employment"
+              >
+                <div
+                  class="absolute top-0 right-0 w-28 h-28 bg-surface-container-high/30 rounded-bl-full pointer-events-none group-hover:scale-110 transition-transform"
+                ></div>
+                <div>
+                  <div class="flex items-center justify-between mb-5">
+                    <div
+                      class="w-12 h-12 rounded-xl bg-surface-container text-primary flex items-center justify-center"
+                    >
+                      <span
+                        class="material-symbols-outlined text-[26px]"
+                        aria-hidden="true"
+                        >work</span
+                      >
+                    </div>
+                    <span
+                      class="px-2.5 py-1 rounded-full bg-surface-container-high text-on-surface font-label-sm text-label-sm font-semibold"
+                    >
+                      16 Career Centers
+                    </span>
+                  </div>
+                  <h3
+                    class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors mb-2"
+                  >
+                    Employment &amp; Job Training
+                  </h3>
+                  <p
+                    class="font-body-sm text-body-sm text-on-surface-variant mb-4"
+                  >
+                    Vocational apprenticeships, resume workshops, interview
+                    attire closets, and certified computer literacy courses.
+                  </p>
+                </div>
+                <div
+                  class="pt-4 flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm"
+                >
+                  <span class="flex items-center gap-1"
+                    ><span
+                      class="material-symbols-outlined text-[16px] text-secondary"
+                      aria-hidden="true"
+                      >verified_user</span
+                    >
+                    Demo Learning Programs</span
+                  >
+                  <span
+                    class="text-primary font-semibold flex items-center gap-0.5 group-hover:translate-x-1 transition-transform"
+                    >Explore
+                    <span
+                      class="material-symbols-outlined text-[16px]"
+                      aria-hidden="true"
+                      >chevron_right</span
+                    ></span
+                  >
+                </div>
+              </a>
+              <!-- 6. Legal & Civic Aid -->
+              <a
+                class="group relative bg-surface-container-lowest rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between overflow-hidden"
+                data-path="community-support"
+                href="resources.html?q=legal"
+              >
+                <div
+                  class="absolute top-0 right-0 w-28 h-28 bg-tertiary-fixed/30 rounded-bl-full pointer-events-none group-hover:scale-110 transition-transform"
+                ></div>
+                <div>
+                  <div class="flex items-center justify-between mb-5">
+                    <div
+                      class="w-12 h-12 rounded-xl bg-tertiary-fixed-dim text-on-tertiary-fixed flex items-center justify-center"
+                    >
+                      <span
+                        class="material-symbols-outlined text-[26px]"
+                        aria-hidden="true"
+                        >gavel</span
+                      >
+                    </div>
+                    <span
+                      class="px-2.5 py-1 rounded-full bg-tertiary-fixed/50 text-tertiary-container font-label-sm text-label-sm font-semibold"
+                    >
+                      12 Legal Desks
+                    </span>
+                  </div>
+                  <h3
+                    class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors mb-2"
+                  >
+                    Legal &amp; Civic Aid
+                  </h3>
+                  <p
+                    class="font-body-sm text-body-sm text-on-surface-variant mb-4"
+                  >
+                    Pro bono family law consults, immigration documentation
+                    guidance, notary clinics, and civil rights representation.
+                  </p>
+                </div>
+                <div
+                  class="pt-4 flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm"
+                >
+                  <span class="flex items-center gap-1"
+                    ><span
+                      class="material-symbols-outlined text-[16px] text-tertiary-container"
+                      aria-hidden="true"
+                      >lock</span
+                    >
+                    Confidential &amp; Free</span
+                  >
+                  <span
+                    class="text-primary font-semibold flex items-center gap-0.5 group-hover:translate-x-1 transition-transform"
+                    >Explore
+                    <span
+                      class="material-symbols-outlined text-[16px]"
+                      aria-hidden="true"
+                      >chevron_right</span
+                    ></span
+                  >
+                </div>
+              </a>
+            </div>
+          </div>
+        </section>
+        <!-- Civic Impact Statistics Strip -->
+        <section class="w-full bg-surface-container-low px-gutter py-space-xl">
+          <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-2 lg:grid-cols-4 gap-6">
+              <!-- Stat 1 -->
+              <div
+                class="bg-surface-container-lowest p-6 rounded-2xl shadow-sm text-center lg:text-left flex flex-col justify-between"
+              >
+                <span
+                  class="material-symbols-outlined text-secondary text-[32px] mb-2"
+                  aria-hidden="true"
+                  >people</span
+                >
+                <div>
+                  <div
+                    class="font-display-hero text-[38px] leading-tight font-bold text-primary"
+                  >
+                    14,280+
+                  </div>
+                  <p
+                    class="font-label-md text-label-md text-on-surface-variant mt-1"
+                  >
+                    Neighbors Assisted in 2025 (demo figure)
+                  </p>
+                </div>
+                <div
+                  class="mt-4 pt-3 flex items-center justify-center lg:justify-start gap-1 text-on-secondary-container font-label-sm text-label-sm"
+                >
+                  <span class="w-2 h-2 rounded-full bg-secondary"></span> Across
+                  all 24 civic wards
+                </div>
+              </div>
+              <!-- Stat 2 -->
+              <div
+                class="bg-surface-container-lowest p-6 rounded-2xl shadow-sm text-center lg:text-left flex flex-col justify-between"
+              >
+                <span
+                  class="material-symbols-outlined text-primary text-[32px] mb-2"
+                  aria-hidden="true"
+                  >verified</span
+                >
+                <div>
+                  <div
+                    class="font-display-hero text-[38px] leading-tight font-bold text-on-surface"
+                  >
+                    180+
+                  </div>
+                  <p
+                    class="font-label-md text-label-md text-on-surface-variant mt-1"
+                  >
+                    Demo Partner Organizations
+                  </p>
+                </div>
+                <div
+                  class="mt-4 pt-3 flex items-center justify-center lg:justify-start gap-1 text-secondary font-label-sm text-label-sm"
+                >
+                  <span
+                    class="w-2 h-2 rounded-full bg-secondary-container"
+                  ></span>
+                  Fictional impact statistics
+                </div>
+              </div>
+              <!-- Stat 3 -->
+              <div
+                class="bg-surface-container-lowest p-6 rounded-2xl shadow-sm text-center lg:text-left flex flex-col justify-between"
+              >
+                <span
+                  class="material-symbols-outlined text-tertiary-container text-[32px] mb-2"
+                  aria-hidden="true"
+                  >volunteer_activism</span
+                >
+                <div>
+                  <div
+                    class="font-display-hero text-[38px] leading-tight font-bold text-tertiary-container"
+                  >
+                    45,000+
+                  </div>
+                  <p
+                    class="font-label-md text-label-md text-on-surface-variant mt-1"
+                  >
+                    Volunteer Hours Logged
+                  </p>
+                </div>
+                <div
+                  class="mt-4 pt-3 flex items-center justify-center lg:justify-start gap-1 text-on-tertiary-fixed-variant font-label-sm text-label-sm"
+                >
+                  <span class="w-2 h-2 rounded-full bg-tertiary-fixed"></span>
+                  Direct neighborhood action
+                </div>
+              </div>
+              <!-- Stat 4 -->
+              <div
+                class="bg-surface-container-lowest p-6 rounded-2xl shadow-sm text-center lg:text-left flex flex-col justify-between"
+              >
+                <span
+                  class="material-symbols-outlined text-secondary text-[32px] mb-2"
+                  aria-hidden="true"
+                  >savings</span
+                >
+                <div>
+                  <div
+                    class="font-display-hero text-[38px] leading-tight font-bold text-primary"
+                  >
+                    $1.2M+
+                  </div>
+                  <p
+                    class="font-label-md text-label-md text-on-surface-variant mt-1"
+                  >
+                    In-kind Aid Distributed
+                  </p>
+                </div>
+                <div
+                  class="mt-4 pt-3 flex items-center justify-center lg:justify-start gap-1 text-secondary font-label-sm text-label-sm"
+                >
+                  <span class="w-2 h-2 rounded-full bg-secondary"></span> Meals,
+                  medical grants &amp; supplies
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Upcoming Community Events Section -->
+        <section class="w-full px-gutter py-space-xl bg-surface">
+          <div class="max-w-7xl mx-auto">
+            <div
+              class="flex flex-col md:flex-row md:items-end justify-between mb-space-xl gap-4"
+            >
+              <div>
+                <div
+                  class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm mb-2"
+                >
+                  <span
+                    class="material-symbols-outlined text-[15px]"
+                    aria-hidden="true"
+                    >event</span
+                  >
+                  Direct Engagement
+                </div>
+                <h2 class="font-headline-lg text-headline-lg text-on-surface">
+                  Upcoming Community Events
+                </h2>
+                <p
+                  class="font-body-md text-body-md text-on-surface-variant max-w-xl"
+                >
+                  Free, open-to-the-public workshops, distributions, and
+                  neighborhood convenings.
+                </p>
+              </div>
+              <a
+                class="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-surface-container text-on-surface font-label-md text-label-md hover:bg-surface-container-high transition-colors"
+                data-path="events"
+                href="events.html"
+              >
+                <span>View All Events</span>
+                <span
+                  class="material-symbols-outlined text-[18px]"
+                  aria-hidden="true"
+                  >calendar_month</span
+                >
+              </a>
+            </div>
+            <!-- 3 Featured Events Cards -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+              <!-- Event 1 -->
+              <div
+                class="bg-surface-container-lowest rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between"
+              >
+                <div class="relative h-44 w-full overflow-hidden">
+                  <img
+                    class="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
+                    src="assets/images/stitch-03.jpg"
+                    alt="An open-air urban neighborhood farmers market with fresh produce crates, warm natural sunlight, volunteer coordinators in sage green aprons assisting senior citizens and families in a vibrant community plaza setting"
+                    decoding="async"
+                    loading="lazy"
+                  />
+                  <div
+                    class="absolute top-3 left-3 bg-surface-container-lowest/95 backdrop-blur-md rounded-xl px-3 py-1.5 text-center shadow-md"
+                  >
+                    <span
+                      class="block font-label-sm text-label-sm text-tertiary-container uppercase font-bold tracking-wider"
+                      >NOV</span
+                    >
+                    <span
+                      class="block font-headline-sm text-headline-sm text-on-surface font-extrabold leading-none"
+                      >14</span
+                    >
+                  </div>
+                  <div
+                    class="absolute top-3 right-3 bg-secondary/90 text-on-secondary backdrop-blur-md rounded-full px-3 py-1 font-label-sm text-label-sm"
+                  >
+                    Free Admission
+                  </div>
+                </div>
+                <div class="p-6 flex-1 flex flex-col justify-between">
+                  <div>
+                    <span
+                      class="font-label-sm text-label-sm text-secondary font-semibold uppercase tracking-wide"
+                      >Food &amp; Family Care</span
+                    >
+                    <h3
+                      class="font-title-md text-title-md text-on-surface mt-1 mb-2 hover:text-primary transition-colors"
+                    >
+                      Fall Harvest Mobile Produce Fair &amp; Recipe Kit Workshop
+                    </h3>
+                    <p
+                      class="font-body-sm text-body-sm text-on-surface-variant mb-4"
+                    >
+                      Hosted by
+                      <span class="font-semibold text-on-surface"
+                        >Northside Mutual Aid Alliance</span
+                      >
+                    </p>
+                    <div
+                      class="space-y-1.5 text-on-surface-variant font-body-sm text-body-sm mb-4"
+                    >
+                      <div class="flex items-center gap-2">
+                        <span
+                          class="material-symbols-outlined text-[16px] text-secondary"
+                          aria-hidden="true"
+                          >location_on</span
+                        >
+                        <span>Lincoln Civic Park Pavilion (Ward 4)</span>
+                      </div>
+                      <div class="flex items-center gap-2">
+                        <span
+                          class="material-symbols-outlined text-[16px] text-secondary"
+                          aria-hidden="true"
+                          >schedule</span
+                        >
+                        <span>Saturday, 10:00 AM – 2:00 PM</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="pt-4 flex items-center justify-between">
+                    <div
+                      class="flex items-center gap-1 font-label-sm text-label-sm text-tertiary-container font-semibold"
+                    >
+                      <span
+                        class="material-symbols-outlined text-[16px]"
+                        aria-hidden="true"
+                        >groups</span
+                      >
+                      <span>28 spots left</span>
+                    </div>
+                    <button
+                      class="px-4 py-2 rounded-xl bg-primary text-on-primary font-label-md text-label-md hover:bg-primary-container transition-colors shadow-sm"
+                      type="button"
+                      data-event="home-0"
+                    >
+                      RSVP Free
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <!-- Event 2 -->
+              <div
+                class="bg-surface-container-lowest rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between"
+              >
+                <div class="relative h-44 w-full overflow-hidden">
+                  <img
+                    class="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
+                    src="assets/images/stitch-04.jpg"
+                    alt="A clean modern library community tech room where adult learners and students gather around laptops with an instructor demonstrating bilingual code on a projector screen in warm daylight"
+                    decoding="async"
+                    loading="lazy"
+                  />
+                  <div
+                    class="absolute top-3 left-3 bg-surface-container-lowest/95 backdrop-blur-md rounded-xl px-3 py-1.5 text-center shadow-md"
+                  >
+                    <span
+                      class="block font-label-sm text-label-sm text-tertiary-container uppercase font-bold tracking-wider"
+                      >NOV</span
+                    >
+                    <span
+                      class="block font-headline-sm text-headline-sm text-on-surface font-extrabold leading-none"
+                      >17</span
+                    >
+                  </div>
+                  <div
+                    class="absolute top-3 right-3 bg-secondary-container text-on-secondary-container backdrop-blur-md rounded-full px-3 py-1 font-label-sm text-label-sm"
+                  >
+                    Bilingual (EN/ES)
+                  </div>
+                </div>
+                <div class="p-6 flex-1 flex flex-col justify-between">
+                  <div>
+                    <span
+                      class="font-label-sm text-label-sm text-secondary font-semibold uppercase tracking-wide"
+                      >Digital Literacy &amp; Career</span
+                    >
+                    <h3
+                      class="font-title-md text-title-md text-on-surface mt-1 mb-2 hover:text-primary transition-colors"
+                    >
+                      Bilingual Job Search &amp; Career Readiness Bootcamp
+                    </h3>
+                    <p
+                      class="font-body-sm text-body-sm text-on-surface-variant mb-4"
+                    >
+                      Hosted by
+                      <span class="font-semibold text-on-surface"
+                        >Metropolitan Career Lab</span
+                      >
+                    </p>
+                    <div
+                      class="space-y-1.5 text-on-surface-variant font-body-sm text-body-sm mb-4"
+                    >
+                      <div class="flex items-center gap-2">
+                        <span
+                          class="material-symbols-outlined text-[16px] text-secondary"
+                          aria-hidden="true"
+                          >location_on</span
+                        >
+                        <span>Downtown Public Library, Lab B</span>
+                      </div>
+                      <div class="flex items-center gap-2">
+                        <span
+                          class="material-symbols-outlined text-[16px] text-secondary"
+                          aria-hidden="true"
+                          >schedule</span
+                        >
+                        <span>Tuesday, 5:30 PM – 7:30 PM</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="pt-4 flex items-center justify-between">
+                    <div
+                      class="flex items-center gap-1 font-label-sm text-label-sm text-tertiary-container font-semibold"
+                    >
+                      <span
+                        class="material-symbols-outlined text-[16px]"
+                        aria-hidden="true"
+                        >groups</span
+                      >
+                      <span>12 spots left</span>
+                    </div>
+                    <button
+                      class="px-4 py-2 rounded-xl bg-primary text-on-primary font-label-md text-label-md hover:bg-primary-container transition-colors shadow-sm"
+                      type="button"
+                      data-event="home-1"
+                    >
+                      RSVP Free
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <!-- Event 3 -->
+              <div
+                class="bg-surface-container-lowest rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between"
+              >
+                <div class="relative h-44 w-full overflow-hidden">
+                  <img
+                    class="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
+                    src="assets/images/stitch-05.jpg"
+                    alt="A friendly outdoor wellness fair where healthcare providers take blood pressure tests and offer consultations under clean white tents with banner signage in a sunny community park"
+                    decoding="async"
+                    loading="lazy"
+                  />
+                  <div
+                    class="absolute top-3 left-3 bg-surface-container-lowest/95 backdrop-blur-md rounded-xl px-3 py-1.5 text-center shadow-md"
+                  >
+                    <span
+                      class="block font-label-sm text-label-sm text-tertiary-container uppercase font-bold tracking-wider"
+                      >NOV</span
+                    >
+                    <span
+                      class="block font-headline-sm text-headline-sm text-on-surface font-extrabold leading-none"
+                      >19</span
+                    >
+                  </div>
+                  <div
+                    class="absolute top-3 right-3 bg-tertiary-fixed text-tertiary-container backdrop-blur-md rounded-full px-3 py-1 font-label-sm text-label-sm font-semibold"
+                  >
+                    Walk-in Welcome
+                  </div>
+                </div>
+                <div class="p-6 flex-1 flex flex-col justify-between">
+                  <div>
+                    <span
+                      class="font-label-sm text-label-sm text-secondary font-semibold uppercase tracking-wide"
+                      >Preventive Health</span
+                    >
+                    <h3
+                      class="font-title-md text-title-md text-on-surface mt-1 mb-2 hover:text-primary transition-colors"
+                    >
+                      West Ward Community Flu Clinic &amp; Vision Screening
+                    </h3>
+                    <p
+                      class="font-body-sm text-body-sm text-on-surface-variant mb-4"
+                    >
+                      Hosted by
+                      <span class="font-semibold text-on-surface"
+                        >Community Health Network</span
+                      >
+                    </p>
+                    <div
+                      class="space-y-1.5 text-on-surface-variant font-body-sm text-body-sm mb-4"
+                    >
+                      <div class="flex items-center gap-2">
+                        <span
+                          class="material-symbols-outlined text-[16px] text-secondary"
+                          aria-hidden="true"
+                          >location_on</span
+                        >
+                        <span>Hope Community Center Gym (Ward 14)</span>
+                      </div>
+                      <div class="flex items-center gap-2">
+                        <span
+                          class="material-symbols-outlined text-[16px] text-secondary"
+                          aria-hidden="true"
+                          >schedule</span
+                        >
+                        <span>Thursday, 9:00 AM – 1:00 PM</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="pt-4 flex items-center justify-between">
+                    <div
+                      class="flex items-center gap-1 font-label-sm text-label-sm text-secondary font-semibold"
+                    >
+                      <span
+                        class="material-symbols-outlined text-[16px]"
+                        aria-hidden="true"
+                        >groups</span
+                      >
+                      <span>Open Capacity</span>
+                    </div>
+                    <button
+                      class="px-4 py-2 rounded-xl bg-primary text-on-primary font-label-md text-label-md hover:bg-primary-container transition-colors shadow-sm"
+                      type="button"
+                      data-event="home-2"
+                    >
+                      RSVP Free
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Volunteer Opportunities Spotlight: Two-Column Split Layout -->
+        <section
+          class="w-full px-gutter py-space-xl bg-surface-container-low"
+          id="volunteer"
+        >
+          <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
+              <!-- Left Column: Featured Roles -->
+              <div class="lg:col-span-7 space-y-6">
+                <div>
+                  <div
+                    class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm mb-2"
+                  >
+                    <span
+                      class="material-symbols-outlined text-[15px]"
+                      aria-hidden="true"
+                      >handshake</span
+                    >
+                    High-Impact Volunteer Hub
+                  </div>
+                  <h2 class="font-headline-lg text-headline-lg text-on-surface">
+                    Make a Direct Difference in Your Neighborhood
+                  </h2>
+                  <p
+                    class="font-body-md text-body-md text-on-surface-variant mt-2 max-w-xl"
+                  >
+                    Dedicate 2 to 4 hours a month to support local non-profits,
+                    youth mentorship programs, and emergency distribution
+                    efforts.
+                  </p>
+                </div>
+                <!-- Role 1 -->
+                <div
+                  class="bg-surface-container-lowest p-6 rounded-2xl shadow-sm hover:shadow-md transition-shadow flex flex-col sm:flex-row gap-5 items-start"
+                >
+                  <div
+                    class="w-12 h-12 rounded-xl bg-secondary-container text-on-secondary-container flex items-center justify-center shrink-0"
+                  >
+                    <span
+                      class="material-symbols-outlined text-[24px]"
+                      aria-hidden="true"
+                      >local_shipping</span
+                    >
+                  </div>
+                  <div class="flex-1">
+                    <div
+                      class="flex flex-wrap items-center justify-between gap-2 mb-1"
+                    >
+                      <h4 class="font-title-md text-title-md text-on-surface">
+                        Weekend Food Distribution Lead
+                      </h4>
+                      <span
+                        class="px-2.5 py-0.5 rounded-full bg-surface-container text-secondary font-label-sm text-label-sm font-semibold"
+                        >Ward 3 • Sat mornings</span
+                      >
+                    </div>
+                    <p
+                      class="font-body-sm text-body-sm text-on-surface-variant mb-3"
+                    >
+                      Coordinate pantry staging, manage box hand-offs to local
+                      senior transport, and direct walk-in community intake.
+                    </p>
+                    <div
+                      class="flex items-center gap-4 text-on-surface-variant font-label-sm text-label-sm"
+                    >
+                      <span class="flex items-center gap-1"
+                        ><span
+                          class="material-symbols-outlined text-[16px] text-secondary"
+                          aria-hidden="true"
+                          >schedule</span
+                        >
+                        3 hrs/week</span
+                      >
+                      <span class="flex items-center gap-1"
+                        ><span
+                          class="material-symbols-outlined text-[16px] text-secondary"
+                          aria-hidden="true"
+                          >badge</span
+                        >
+                        Onboarding provided</span
+                      >
+                    </div>
+                  </div>
+                </div>
+                <!-- Role 2 -->
+                <div
+                  class="bg-surface-container-lowest p-6 rounded-2xl shadow-sm hover:shadow-md transition-shadow flex flex-col sm:flex-row gap-5 items-start"
+                >
+                  <div
+                    class="w-12 h-12 rounded-xl bg-primary-fixed text-on-primary-fixed flex items-center justify-center shrink-0"
+                  >
+                    <span
+                      class="material-symbols-outlined text-[24px]"
+                      aria-hidden="true"
+                      >terminal</span
+                    >
+                  </div>
+                  <div class="flex-1">
+                    <div
+                      class="flex flex-wrap items-center justify-between gap-2 mb-1"
+                    >
+                      <h4 class="font-title-md text-title-md text-on-surface">
+                        Youth Coding &amp; STEM Mentor
+                      </h4>
+                      <span
+                        class="px-2.5 py-0.5 rounded-full bg-surface-container text-primary font-label-sm text-label-sm font-semibold"
+                        >Ward 11 • Wed evenings</span
+                      >
+                    </div>
+                    <p
+                      class="font-body-sm text-body-sm text-on-surface-variant mb-3"
+                    >
+                      Guide middle-school students through basic Python and
+                      robotics projects in an energetic, safe after-school
+                      space.
+                    </p>
+                    <div
+                      class="flex items-center gap-4 text-on-surface-variant font-label-sm text-label-sm"
+                    >
+                      <span class="flex items-center gap-1"
+                        ><span
+                          class="material-symbols-outlined text-[16px] text-secondary"
+                          aria-hidden="true"
+                          >schedule</span
+                        >
+                        2 hrs/week</span
+                      >
+                      <span class="flex items-center gap-1"
+                        ><span
+                          class="material-symbols-outlined text-[16px] text-secondary"
+                          aria-hidden="true"
+                          >badge</span
+                        >
+                        Background check</span
+                      >
+                    </div>
+                  </div>
+                </div>
+                <!-- Role 3 -->
+                <div
+                  class="bg-surface-container-lowest p-6 rounded-2xl shadow-sm hover:shadow-md transition-shadow flex flex-col sm:flex-row gap-5 items-start"
+                >
+                  <div
+                    class="w-12 h-12 rounded-xl bg-secondary-fixed text-on-secondary-fixed flex items-center justify-center shrink-0"
+                  >
+                    <span
+                      class="material-symbols-outlined text-[24px]"
+                      aria-hidden="true"
+                      >yard</span
+                    >
+                  </div>
+                  <div class="flex-1">
+                    <div
+                      class="flex flex-wrap items-center justify-between gap-2 mb-1"
+                    >
+                      <h4 class="font-title-md text-title-md text-on-surface">
+                        Community Garden Caretaker
+                      </h4>
+                      <span
+                        class="px-2.5 py-0.5 rounded-full bg-surface-container text-secondary font-label-sm text-label-sm font-semibold"
+                        >Ward 18 • Flexible</span
+                      >
+                    </div>
+                    <p
+                      class="font-body-sm text-body-sm text-on-surface-variant mb-3"
+                    >
+                      Assist with planting beds, seasonal composting, rainwater
+                      harvesting, and hosting educational open days for schools.
+                    </p>
+                    <div
+                      class="flex items-center gap-4 text-on-surface-variant font-label-sm text-label-sm"
+                    >
+                      <span class="flex items-center gap-1"
+                        ><span
+                          class="material-symbols-outlined text-[16px] text-secondary"
+                          aria-hidden="true"
+                          >schedule</span
+                        >
+                        Flexible shifts</span
+                      >
+                      <span class="flex items-center gap-1"
+                        ><span
+                          class="material-symbols-outlined text-[16px] text-secondary"
+                          aria-hidden="true"
+                          >badge</span
+                        >
+                        All skill levels</span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Right Column: Express Volunteer Sign-up Card -->
+              <div
+                class="lg:col-span-5 bg-surface-container-lowest p-8 rounded-3xl shadow-xl relative overflow-hidden"
+              >
+                <div
+                  class="absolute top-0 right-0 w-36 h-36 bg-secondary-container/30 rounded-bl-full pointer-events-none"
+                ></div>
+                <div class="relative z-10">
+                  <div
+                    class="flex items-center gap-2 mb-2 text-primary font-semibold font-label-md text-label-md"
+                  >
+                    <span
+                      class="material-symbols-outlined text-[20px]"
+                      aria-hidden="true"
+                      >person_pin_circle</span
+                    >
+                    <span>Express Civic Pledge</span>
+                  </div>
+                  <h3
+                    class="font-headline-md text-headline-md text-on-surface mb-2"
+                  >
+                    Join the Neighborhood Response Corps
+                  </h3>
+                  <p
+                    class="font-body-sm text-body-sm text-on-surface-variant mb-6"
+                  >
+                    Try the volunteer form with sample details. This
+                    browser-only demonstration does not send information or
+                    match you with real programs.
+                  </p>
+                  <form
+                    class="space-y-4"
+                    id="volunteer-form"
+                    data-demo-form=""
+                    novalidate=""
+                  >
+                    <div>
+                      <label
+                        class="block font-label-sm text-label-sm text-on-surface mb-1"
+                        for="vol-name"
+                        >Full Name</label
+                      >
+                      <input
+                        class="w-full px-4 py-2.5 rounded-xl bg-surface-container-low font-body-sm text-body-sm text-on-surface placeholder:text-on-surface-variant/60 focus:bg-surface-container-lowest focus:outline-none transition-colors"
+                        id="vol-name"
+                        placeholder="e.g. Maria Gonzalez"
+                        required=""
+                        type="text"
+                        name="vol-name"
+                        maxlength="150"
+                      />
+                    </div>
+                    <div>
+                      <label
+                        class="block font-label-sm text-label-sm text-on-surface mb-1"
+                        for="vol-email"
+                        >Email Address</label
+                      >
+                      <input
+                        class="w-full px-4 py-2.5 rounded-xl bg-surface-container-low font-body-sm text-body-sm text-on-surface placeholder:text-on-surface-variant/60 focus:bg-surface-container-lowest focus:outline-none transition-colors"
+                        id="vol-email"
+                        placeholder="maria.g@example.org"
+                        required=""
+                        type="email"
+                        name="vol-email"
+                      />
+                    </div>
+                    <div>
+                      <label
+                        class="block font-label-sm text-label-sm text-on-surface mb-1"
+                        for="vol-interest"
+                        >Primary Area of Interest</label
+                      >
+                      <select
+                        class="w-full px-4 py-2.5 rounded-xl bg-surface-container-low font-body-sm text-body-sm text-on-surface focus:bg-surface-container-lowest focus:outline-none transition-colors cursor-pointer"
+                        id="vol-interest"
+                        name="vol-interest"
+                      >
+                        <option value="food">
+                          Food Distribution &amp; Nutrition
+                        </option>
+                        <option value="youth">
+                          Youth Tutoring &amp; Mentorship
+                        </option>
+                        <option value="health">
+                          Mobile Health &amp; Senior Care
+                        </option>
+                        <option value="environment">
+                          Urban Gardening &amp; Cleanups
+                        </option>
+                        <option value="translation">
+                          Bilingual Translation Assistance
+                        </option>
+                      </select>
+                    </div>
+                    <div class="flex items-center gap-3 pt-2">
+                      <input
+                        class="w-4 h-4 rounded text-primary focus:ring-0 cursor-pointer accent-primary"
+                        id="vol-agree"
+                        required=""
+                        type="checkbox"
+                        name="vol-agree"
+                      />
+                      <label
+                        class="font-body-sm text-body-sm text-on-surface-variant cursor-pointer"
+                        for="vol-agree"
+                      >
+                        I agree to receive verified civic volunteer alerts for
+                        my district.
+                      </label>
+                    </div>
+                    <button
+                      class="w-full py-3.5 px-6 rounded-xl bg-secondary text-on-secondary font-label-md text-label-md flex items-center justify-center gap-2 hover:bg-on-secondary-fixed-variant transition-colors shadow-md mt-2"
+                      type="submit"
+                    >
+                      <span>Submit Volunteer Pledge</span>
+                      <span
+                        class="material-symbols-outlined text-[18px]"
+                        aria-hidden="true"
+                        >favorite</span
+                      >
+                    </button>
+                    <p class="form-status" role="status" aria-live="polite"></p>
+                  </form>
+                  <!-- Volunteer Trust Badges -->
+                  <div
+                    class="mt-6 pt-5 flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm"
+                  >
+                    <span class="flex items-center gap-1">
+                      <span
+                        class="material-symbols-outlined text-[16px] text-secondary"
+                        aria-hidden="true"
+                        >verified_user</span
+                      >
+                      Browser-Only Demo
+                    </span>
+                    <span class="flex items-center gap-1">
+                      <span
+                        class="material-symbols-outlined text-[16px] text-secondary"
+                        aria-hidden="true"
+                        >workspace_premium</span
+                      >
+                      Sample Volunteer Opportunities
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Provider Call-To-Action Banner -->
+        <section class="w-full px-gutter py-space-xl bg-surface">
+          <div class="max-w-7xl mx-auto">
+            <div
+              class="relative rounded-3xl overflow-hidden bg-primary text-on-primary p-8 md:p-14 shadow-2xl"
+            >
+              <!-- Decorative Ambient Light -->
+              <div
+                class="absolute -bottom-16 -right-16 w-80 h-80 rounded-full bg-secondary/30 blur-3xl pointer-events-none"
+              ></div>
+              <div
+                class="absolute -top-16 -left-16 w-60 h-60 rounded-full bg-on-primary-container/20 blur-2xl pointer-events-none"
+              ></div>
+              <div class="relative z-10 max-w-3xl">
+                <div
+                  class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary-container text-on-primary-container font-label-sm text-label-sm mb-4"
+                >
+                  <span
+                    class="material-symbols-outlined text-[16px]"
+                    aria-hidden="true"
+                    >campaign</span
+                  >
+                  Civic Organization Portal
+                </div>
+                <h2
+                  class="font-display-hero text-headline-lg md:text-display-hero font-bold tracking-tight text-on-primary mb-4"
+                >
+                  Are you a community organization or service provider?
+                </h2>
+                <p
+                  class="font-body-lg text-body-lg text-on-primary/90 mb-8 max-w-2xl"
+                >
+                  List your verified programs on CommunityConnect to streamline
+                  resident referrals, coordinate volunteer shifts, and publish
+                  upcoming community events in real-time.
+                </p>
+                <div
+                  class="flex flex-col sm:flex-row items-stretch sm:items-center gap-4"
+                >
+                  <a
+                    class="px-space-lg py-3.5 rounded-xl bg-tertiary-container text-on-tertiary font-label-md text-label-md flex items-center justify-center gap-2 shadow-lg hover:bg-tertiary transition-colors"
+                    data-path="partner-with-us"
+                    href="contact.html"
+                  >
+                    <span>Register as a Provider</span>
+                    <span
+                      class="material-symbols-outlined text-[18px]"
+                      aria-hidden="true"
+                      >verified</span
+                    >
+                  </a>
+                  <a
+                    class="px-space-lg py-3.5 rounded-xl bg-surface-container-lowest text-on-surface font-label-md text-label-md flex items-center justify-center gap-2 hover:bg-surface-container transition-colors shadow-sm"
+                    data-path="about-us"
+                    href="about.html"
+                  >
+                    <span>Explore Community Guidelines</span>
+                    <span
+                      class="material-symbols-outlined text-[18px]"
+                      aria-hidden="true"
+                      >menu_book</span
+                    >
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer
+      class="w-full bg-surface-container-low text-on-surface mt-space-xl shadow-[0_-1px_6px_rgba(0,0,0,0.02)]"
+    >
+      <div class="bg-secondary text-on-secondary">
+        <div
+          class="max-w-7xl mx-auto px-gutter py-space-sm flex flex-col sm:flex-row items-center justify-between gap-space-xs"
+        >
+          <div class="flex items-center gap-space-xs">
+            <span
+              class="material-symbols-outlined text-[18px]"
+              aria-hidden="true"
+              >support_agent</span
+            ><span class="font-label-sm text-label-sm font-semibold"
+              >Portfolio demo: organizations, locations, statistics, contacts,
+              and availability are fictional. Not a source of emergency
+              assistance.</span
+            >
+          </div>
+          <div class="font-label-sm text-label-sm text-on-secondary/90">
+            Explore in English or Spanish
+          </div>
+        </div>
+      </div>
+      <div class="max-w-7xl mx-auto px-gutter py-space-xl">
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-space-xl mb-space-xl"
+        >
+          <div class="lg:col-span-2 space-y-space-md">
+            <div class="flex items-center gap-space-sm">
+              <img
+                alt=""
+                class="h-8 w-auto object-contain"
+                src="assets/favicon.svg"
+                decoding="async"
+                loading="lazy"
+                width="30"
+              /><span
+                class="font-headline-sm text-headline-sm text-primary tracking-tight"
+                >CommunityConnect</span
+              >
+            </div>
+            <p
+              class="font-body-md text-body-md text-on-surface-variant max-w-md"
+            >
+              Bridging neighborhood residents, community organizers, and civic
+              agencies through verified, accessible public resources and
+              bilingual neighborhood assistance.
+            </p>
+            <div class="flex items-center gap-space-sm">
+              <span
+                class="inline-flex items-center gap-1.5 px-space-sm py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm"
+                ><span
+                  class="material-symbols-outlined text-[16px]"
+                  aria-hidden="true"
+                  >verified</span
+                >Sample Community Directory</span
+              ><span
+                class="inline-flex items-center gap-1.5 px-space-sm py-1 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm"
+                ><span
+                  class="material-symbols-outlined text-[16px]"
+                  aria-hidden="true"
+                  >translate</span
+                >Bilingual (EN / ES)</span
+              >
+            </div>
+          </div>
+          <div>
+            <h4 class="font-title-md text-title-md text-on-surface mb-space-md">
+              Resource Categories
+            </h4>
+            <ul
+              class="space-y-space-sm font-body-sm text-body-sm text-on-surface-variant"
+            >
+              <li>
+                <a
+                  class="hover:text-primary transition-colors"
+                  data-path="education-resources"
+                  href="resources.html?category=education"
+                  >Education &amp; Youth</a
+                >
+              </li>
+              <li>
+                <a
+                  class="hover:text-primary transition-colors"
+                  data-path="healthcare-access"
+                  href="resources.html?category=healthcare"
+                  >Healthcare &amp; Clinics</a
+                >
+              </li>
+              <li>
+                <a
+                  class="hover:text-primary transition-colors"
+                  data-path="housing-navigation"
+                  href="resources.html?category=housing"
+                  >Housing &amp; Shelter</a
+                >
+              </li>
+              <li>
+                <a
+                  class="hover:text-primary transition-colors"
+                  data-path="food-assistance"
+                  href="resources.html?category=food"
+                  >Food Assistance</a
+                >
+              </li>
+              <li>
+                <a
+                  class="hover:text-primary transition-colors"
+                  data-path="employment-support"
+                  href="resources.html?category=employment"
+                  >Employment &amp; Training</a
+                >
+              </li>
+              <li>
+                <a
+                  class="hover:text-primary transition-colors"
+                  data-path="community-support"
+                  href="resources.html?category=community"
+                  >Community Support</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="font-title-md text-title-md text-on-surface mb-space-md">
+              Quick Links
+            </h4>
+            <ul
+              class="space-y-space-sm font-body-sm text-body-sm text-on-surface-variant"
+            >
+              <li>
+                <a
+                  class="hover:text-primary transition-colors"
+                  data-path="events"
+                  href="events.html"
+                  >Events Calendar</a
+                >
+              </li>
+              <li>
+                <a
+                  class="hover:text-primary transition-colors"
+                  data-path="volunteer-hub"
+                  href="index.html#volunteer"
+                  >Volunteer Hub</a
+                >
+              </li>
+              <li>
+                <a
+                  class="hover:text-primary transition-colors"
+                  data-path="impact-report"
+                  href="about.html#impact"
+                  >Sample Impact Report 2025</a
+                >
+              </li>
+              <li>
+                <a
+                  class="hover:text-primary transition-colors"
+                  data-path="partner-with-us"
+                  href="contact.html"
+                  >Partner With Us</a
+                >
+              </li>
+              <li>
+                <a
+                  class="hover:text-primary transition-colors"
+                  data-path="civic-data"
+                  href="#civic-data"
+                  data-info="civic-data"
+                  >Demo Resource Data</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="font-title-md text-title-md text-on-surface mb-space-md">
+              Civic Helpline
+            </h4>
+            <div
+              class="space-y-space-sm font-body-sm text-body-sm text-on-surface-variant"
+            >
+              <div class="flex items-start gap-space-xs">
+                <span
+                  class="material-symbols-outlined text-[18px] text-primary shrink-0"
+                  aria-hidden="true"
+                  >call</span
+                >
+                <div>
+                  <span class="font-semibold text-on-surface"
+                    >Community Helpline</span
+                  >
+                  <p>(202) 555-0100 · Demo</p>
+                </div>
+              </div>
+              <div class="flex items-start gap-space-xs">
+                <span
+                  class="material-symbols-outlined text-[18px] text-primary shrink-0"
+                  aria-hidden="true"
+                  >location_on</span
+                >
+                <div>
+                  <span class="font-semibold text-on-surface"
+                    >Civic Center Office</span
+                  >
+                  <p>450 Public Square, Suite 200</p>
+                </div>
+              </div>
+              <div class="flex items-start gap-space-xs">
+                <span
+                  class="material-symbols-outlined text-[18px] text-primary shrink-0"
+                  aria-hidden="true"
+                  >mail</span
+                >
+                <div>
+                  <span class="font-semibold text-on-surface"
+                    >Direct Inquiries</span
+                  >
+                  <p>hello@communityconnect.example</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="pt-space-lg flex flex-col md:flex-row items-center justify-between gap-space-md text-on-surface-variant font-label-sm text-label-sm"
+        >
+          <p>© 2026 CommunityConnect · Portfolio demonstration</p>
+          <div class="flex items-center gap-space-md">
+            <a
+              class="hover:text-on-surface transition-colors"
+              data-path="privacy-policy"
+              href="#privacy-policy"
+              data-info="privacy-policy"
+              >Privacy Policy</a
+            ><a
+              class="hover:text-on-surface transition-colors"
+              data-path="terms-of-service"
+              href="#terms-of-service"
+              data-info="terms-of-service"
+              >Terms of Service</a
+            ><a
+              class="hover:text-on-surface transition-colors"
+              data-path="accessibility"
+              href="#accessibility"
+              data-info="accessibility"
+              >Accessibility</a
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+    <nav class="bottom-nav" aria-label="Quick navigation">
+      <a href="index.html" aria-current="page"
+        ><span class="material-symbols-outlined" aria-hidden="true">home</span
+        ><span>Home</span></a
+      ><a href="resources.html"
+        ><span class="material-symbols-outlined" aria-hidden="true">search</span
+        ><span>Resources</span></a
+      ><a href="events.html"
+        ><span class="material-symbols-outlined" aria-hidden="true"
+          >calendar_month</span
+        ><span>Events</span></a
+      ><a href="about.html"
+        ><span class="material-symbols-outlined" aria-hidden="true">groups</span
+        ><span>About</span></a
+      ><a href="contact.html"
+        ><span class="material-symbols-outlined" aria-hidden="true">mail</span
+        ><span>Contact</span></a
+      >
+    </nav>
+    <dialog id="detail-dialog" aria-labelledby="dialog-title">
+      <div class="dialog-top">
+        <span class="eyebrow">CommunityConnect · Demo</span
+        ><button type="button" data-close-dialog="" aria-label="Close dialog">
+          <span class="material-symbols-outlined" aria-hidden="true"
+            >close</span
+          >
+        </button>
+      </div>
+      <div id="dialog-content"></div>
+    </dialog>
+  </body>
+</html>

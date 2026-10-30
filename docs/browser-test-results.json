@@ -1,0 +1,41 @@
+{
+  "checks": 24,
+  "passed": 24,
+  "viewportWidths": [
+    360,
+    390,
+    768,
+    1024,
+    1440
+  ],
+  "languages": [
+    "en",
+    "es"
+  ],
+  "tests": [
+    "all five pages load local assets, have one main landmark, correct active navigation, and no overflow",
+    "every local link and fragment resolves",
+    "home search carries query and neighborhood to resource results",
+    "result summary, category counts, and grid agree under combined filters and reset",
+    "category filters, search empty state, reset, and clear search work",
+    "distance, service language, eligibility, and sort controls work",
+    "resource dialogs trap focus, close on Escape, and restore opener focus",
+    "resource map respects filters and opens detail views",
+    "Spanish toggle translates static content, resources, accessible labels, and persists across navigation",
+    "event listing, category, keyword, date, and reset work",
+    "calendar renders actual November weekdays and opens event details",
+    "event map renders all matching fictional locations",
+    "demo registration confirms truthfully and remains only in memory",
+    "calendar download is a valid clearly marked demo ICS file",
+    "share URLs open a selected resource detail view",
+    "contact form shows inline accessible errors and focuses first invalid input",
+    "valid demo contact submission makes no POST request and claims no delivery",
+    "Spanish validation and success messages render correctly",
+    "FAQ buttons support keyboard activation and accurate expanded states",
+    "home and about volunteer forms validate and confirm as demos",
+    "print guide opens browser print with bilingual sample resource content",
+    "responsive pages fit at 360, 390, 768, and 1024 px in both languages",
+    "mobile menu opens all five links, closes on Escape, and bottom navigation is active",
+    "no runtime exceptions or failed asset requests occurred"
+  ]
+}

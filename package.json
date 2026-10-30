@@ -1,0 +1,28 @@
+{
+  "name": "communityconnect",
+  "version": "1.0.0",
+  "description": "Bilingual community resource discovery portfolio built from Google Stitch designs.",
+  "scripts": {
+    "start": "node scripts/server.cjs",
+    "build": "tailwindcss -i css/input.css -o css/stitch.css --minify",
+    "test": "node --test tests/filters.test.js",
+    "test:browser": "node tests/browser.cjs",
+    "package": "npm run build && node scripts/package-site.cjs",
+    "test:a11y": "node tests/audit.cjs",
+    "screenshots": "node scripts/screenshots.cjs",
+    "test:extra": "node tests/additional.cjs"
+  },
+  "keywords": [],
+  "author": "",
+  "type": "module",
+  "devDependencies": {
+    "@axe-core/playwright": "^4.10.2",
+    "cheerio": "^1.0.0",
+    "playwright": "^1.58.2",
+    "tailwindcss": "^3.4.17"
+  },
+  "private": true,
+  "engines": {
+    "node": ">=20"
+  }
+}

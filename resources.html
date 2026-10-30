@@ -1,0 +1,967 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="web_standard" name="shell-type" />
+    <title>Resource Directory | CommunityConnect</title>
+    <meta
+      name="description"
+      content="CommunityConnect: discover neighborhood resources, community events, and volunteer opportunities. A bilingual portfolio demonstration."
+    />
+    <meta name="theme-color" content="#003535" />
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="css/stitch.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <script type="module" src="js/app.js"></script>
+  </head>
+  <body
+    class="bg-surface font-body-md text-on-surface antialiased"
+    data-page="resources"
+  >
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="brand" data-path="home" href="index.html"
+          ><img
+            alt=""
+            class="h-8 w-auto object-contain"
+            src="assets/favicon.svg"
+            decoding="async"
+            width="30"
+            height="30"
+          /><span
+            class="font-headline-sm text-headline-sm text-primary tracking-tight"
+            >CommunityConnect</span
+          ></a
+        >
+        <nav class="desktop-nav" aria-label="Main navigation">
+          <a href="index.html">Home</a
+          ><a href="resources.html" aria-current="page">Resource Directory</a
+          ><a href="events.html">Events</a><a href="about.html">About Us</a
+          ><a href="contact.html">Contact</a>
+        </nav>
+        <div class="header-actions">
+          <div class="language-toggle" aria-label="Language">
+            <button type="button" data-lang="en" lang="en" aria-label="English">
+              EN</button
+            ><button
+              type="button"
+              data-lang="es"
+              lang="es"
+              aria-label="Español"
+            >
+              ES
+            </button>
+          </div>
+          <a class="get-involved" href="about.html#volunteer">Get Involved</a
+          ><button
+            class="menu-toggle"
+            aria-label="Open navigation"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+            type="button"
+          >
+            <span class="material-symbols-outlined" aria-hidden="true"
+              >menu</span
+            >
+          </button>
+        </div>
+      </div>
+      <nav
+        id="mobile-menu"
+        class="mobile-menu"
+        aria-label="Mobile navigation"
+        hidden=""
+      >
+        <a href="index.html">Home</a
+        ><a href="resources.html" aria-current="page">Resource Directory</a
+        ><a href="events.html">Events</a><a href="about.html">About Us</a
+        ><a href="contact.html">Contact</a>
+      </nav>
+    </header>
+    <main class="w-full pt-20 bg-surface" id="main-content" tabindex="-1">
+      <div class="demo-notice">
+        <span class="demo-dot" aria-hidden="true"></span
+        ><span
+          >Portfolio demo · Fictional organizations, statistics, locations, and
+          contact details. No real services or registrations.</span
+        >
+      </div>
+      <div class="flex flex-col w-full">
+        <!-- Top Utility Context & Hero Ribbon -->
+        <section
+          class="relative w-full bg-gradient-to-b from-surface-container-high/40 via-surface to-surface overflow-hidden px-gutter py-space-xl"
+        >
+          <div class="max-w-7xl mx-auto flex flex-col gap-space-md">
+            <!-- Breadcrumbs -->
+            <nav
+              aria-label="Breadcrumb"
+              class="flex items-center gap-space-xs text-on-surface-variant font-label-sm text-label-sm"
+            >
+              <a
+                class="hover:text-primary transition-colors flex items-center gap-1"
+                data-path="home"
+                href="index.html"
+              >
+                <span
+                  class="material-symbols-outlined text-[16px]"
+                  aria-hidden="true"
+                  >home</span
+                >
+                <span>Home</span>
+              </a>
+              <span class="text-outline-variant">/</span>
+              <span class="text-primary font-semibold">Resource Directory</span>
+            </nav>
+            <!-- Editorial Header Content -->
+            <div
+              class="flex flex-col lg:flex-row lg:items-end justify-between gap-space-lg"
+            >
+              <div class="space-y-space-xs max-w-3xl">
+                <div
+                  class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm"
+                >
+                  <span class="w-2 h-2 rounded-full bg-secondary"></span>
+                  <span>Demo Directory • 6 Sample Programs</span>
+                </div>
+                <h1
+                  class="font-headline-lg text-headline-lg text-on-surface tracking-tight"
+                >
+                  Community Resource Directory
+                </h1>
+                <p
+                  class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed"
+                >
+                  Browse six sample free and low-cost services. Explore search
+                  and filters using fictional organizations and locations.
+                </p>
+              </div>
+              <!-- Quick Stats Bento Strip -->
+              <div
+                class="flex items-center gap-space-sm shrink-0 bg-surface-container-lowest p-2 rounded-xl shadow-sm"
+              >
+                <div
+                  class="px-space-md py-2 rounded-lg bg-surface-container text-center"
+                >
+                  <p
+                    class="font-headline-sm text-headline-sm text-primary font-bold"
+                  >
+                    6
+                  </p>
+                  <p
+                    class="font-label-sm text-label-sm text-on-surface-variant"
+                  >
+                    Programs
+                  </p>
+                </div>
+                <div
+                  class="px-space-md py-2 rounded-lg bg-surface-container text-center"
+                >
+                  <p
+                    class="font-headline-sm text-headline-sm text-secondary font-bold"
+                  >
+                    Demo
+                  </p>
+                  <p
+                    class="font-label-sm text-label-sm text-on-surface-variant"
+                  >
+                    Demo Partner
+                  </p>
+                </div>
+                <div
+                  class="px-space-md py-2 rounded-lg bg-surface-container text-center"
+                >
+                  <p
+                    class="font-headline-sm text-headline-sm text-tertiary-container font-bold"
+                  >
+                    Free
+                  </p>
+                  <p
+                    class="font-label-sm text-label-sm text-on-surface-variant"
+                  >
+                    Civic Access
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Interactive Search & Multi-tier Toolbar -->
+        <section
+          class="sticky top-20 z-30 w-full bg-surface-container-lowest/95 backdrop-blur-md shadow-sm"
+        >
+          <div
+            class="max-w-7xl mx-auto px-gutter py-space-md flex flex-col gap-space-sm"
+          >
+            <!-- Search Input & Fast Controls -->
+            <div class="flex flex-col md:flex-row items-center gap-space-sm">
+              <div class="relative w-full flex-1">
+                <span
+                  class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-secondary text-[22px]"
+                  aria-hidden="true"
+                  >search</span
+                >
+                <input
+                  class="w-full pl-12 pr-12 py-3 bg-surface rounded-xl font-body-md text-body-md text-on-surface placeholder:text-outline focus:outline-none focus:bg-surface-container-lowest focus:shadow-md transition-all"
+                  id="resource-search-input"
+                  placeholder="Search by service type, keyword, food pantry, legal clinic, ZIP..."
+                  type="text"
+                  name="resource-search-input"
+                  aria-label="Search by service type, keyword, food pantry, legal clinic, ZIP..."
+                  maxlength="150"
+                />
+                <button
+                  aria-label="Clear search"
+                  class="absolute right-3 top-1/2 -translate-y-1/2 p-1.5 text-on-surface-variant hover:text-primary rounded-lg"
+                  type="button"
+                  data-clear-search=""
+                >
+                  <span
+                    class="material-symbols-outlined text-[18px]"
+                    aria-hidden="true"
+                    >close</span
+                  >
+                </button>
+              </div>
+              <div
+                class="flex items-center gap-space-xs w-full md:w-auto shrink-0"
+              >
+                <div class="relative flex-1 md:flex-initial">
+                  <button
+                    class="w-full md:w-auto flex items-center justify-center gap-2 px-4 py-3 bg-surface-container-low hover:bg-surface-container rounded-xl font-label-md text-label-md text-on-surface transition-colors"
+                    id="view-mode-toggle"
+                    aria-pressed="false"
+                    type="button"
+                  >
+                    <span
+                      class="material-symbols-outlined text-[20px] text-secondary"
+                      aria-hidden="true"
+                      >map</span
+                    >
+                    <span>Map View</span>
+                  </button>
+                </div>
+                <button
+                  class="flex items-center gap-1.5 px-4 py-3 bg-surface-container-low hover:bg-surface-container rounded-xl font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors"
+                  id="reset-filters-btn"
+                  type="button"
+                  aria-label="Reset filters"
+                >
+                  <span
+                    class="material-symbols-outlined text-[18px]"
+                    aria-hidden="true"
+                    >restart_alt</span
+                  >
+                  <span class="hidden sm:inline">Reset</span>
+                </button>
+              </div>
+            </div>
+            <!-- Category Filter Pills -->
+            <div
+              class="flex items-center gap-2 overflow-x-auto no-scrollbar py-1"
+              id="category-pills"
+            >
+              <button
+                class="cat-pill active shrink-0 px-4 py-2 rounded-full font-label-md text-label-md bg-primary text-on-primary shadow-sm transition-all flex items-center gap-1.5"
+                data-cat="all"
+                type="button"
+              >
+                <span
+                  class="material-symbols-outlined text-[16px]"
+                  aria-hidden="true"
+                  >apps</span
+                >
+                <span data-pill-label>All Services</span><span data-pill-count></span>
+              </button>
+              <button
+                class="cat-pill shrink-0 px-4 py-2 rounded-full font-label-md text-label-md bg-surface-container text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all flex items-center gap-1.5"
+                data-cat="education"
+                type="button"
+              >
+                <span
+                  class="material-symbols-outlined text-[16px]"
+                  aria-hidden="true"
+                  >school</span
+                >
+                <span data-pill-label>Education</span><span data-pill-count></span>
+              </button>
+              <button
+                class="cat-pill shrink-0 px-4 py-2 rounded-full font-label-md text-label-md bg-surface-container text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all flex items-center gap-1.5"
+                data-cat="healthcare"
+                type="button"
+              >
+                <span
+                  class="material-symbols-outlined text-[16px]"
+                  aria-hidden="true"
+                  >local_hospital</span
+                >
+                <span data-pill-label>Healthcare</span><span data-pill-count></span>
+              </button>
+              <button
+                class="cat-pill shrink-0 px-4 py-2 rounded-full font-label-md text-label-md bg-surface-container text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all flex items-center gap-1.5"
+                data-cat="housing"
+                type="button"
+              >
+                <span
+                  class="material-symbols-outlined text-[16px]"
+                  aria-hidden="true"
+                  >home_work</span
+                >
+                <span data-pill-label>Housing</span><span data-pill-count></span>
+              </button>
+              <button
+                class="cat-pill shrink-0 px-4 py-2 rounded-full font-label-md text-label-md bg-surface-container text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all flex items-center gap-1.5"
+                data-cat="food"
+                type="button"
+              >
+                <span
+                  class="material-symbols-outlined text-[16px]"
+                  aria-hidden="true"
+                  >restaurant</span
+                >
+                <span data-pill-label>Food Assistance</span><span data-pill-count></span>
+              </button>
+              <button
+                class="cat-pill shrink-0 px-4 py-2 rounded-full font-label-md text-label-md bg-surface-container text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all flex items-center gap-1.5"
+                data-cat="employment"
+                type="button"
+              >
+                <span
+                  class="material-symbols-outlined text-[16px]"
+                  aria-hidden="true"
+                  >work</span
+                >
+                <span data-pill-label>Employment</span><span data-pill-count></span>
+              </button>
+              <button
+                class="cat-pill shrink-0 px-4 py-2 rounded-full font-label-md text-label-md bg-surface-container text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all flex items-center gap-1.5"
+                data-cat="community"
+                type="button"
+              >
+                <span
+                  class="material-symbols-outlined text-[16px]"
+                  aria-hidden="true"
+                  >diversity_3</span
+                >
+                <span data-pill-label>Community Support</span><span data-pill-count></span>
+              </button>
+            </div>
+            <!-- Secondary Faceted Filters Ribbon -->
+            <div
+              class="flex flex-wrap items-center justify-between gap-space-sm pt-2"
+            >
+              <div class="flex flex-wrap items-center gap-2">
+                <!-- Eligibility Filter -->
+                <div class="relative">
+                  <select
+                    class="appearance-none pl-3 pr-8 py-1.5 bg-surface-container-low hover:bg-surface-container rounded-lg font-label-sm text-label-sm text-on-surface focus:outline-none cursor-pointer"
+                    id="filter-eligibility"
+                    name="filter-eligibility"
+                    aria-label="Filter by eligibility"
+                  >
+                    <option value="all">Eligibility: All Residents</option>
+                    <option value="no-id">No ID Required</option>
+                    <option value="families">Families &amp; Youth</option>
+                    <option value="seniors">Seniors (60+)</option>
+                  </select>
+                  <span
+                    class="material-symbols-outlined pointer-events-none absolute right-2 top-1/2 -translate-y-1/2 text-[16px] text-outline"
+                    aria-hidden="true"
+                    >expand_more</span
+                  >
+                </div>
+                <!-- Radius Filter -->
+                <div class="relative">
+                  <select
+                    class="appearance-none pl-3 pr-8 py-1.5 bg-surface-container-low hover:bg-surface-container rounded-lg font-label-sm text-label-sm text-on-surface focus:outline-none cursor-pointer"
+                    id="filter-distance"
+                    name="filter-distance"
+                    aria-label="Filter by distance"
+                  >
+                    <option value="5">Within 5 miles</option>
+                    <option value="2">Within 2 miles</option>
+                    <option value="10">Within 10 miles</option>
+                    <option value="any">Any Distance</option>
+                  </select>
+                  <span
+                    class="material-symbols-outlined pointer-events-none absolute right-2 top-1/2 -translate-y-1/2 text-[16px] text-outline"
+                    aria-hidden="true"
+                    >expand_more</span
+                  >
+                </div>
+                <!-- Language Filter -->
+                <div class="relative">
+                  <select
+                    class="appearance-none pl-3 pr-8 py-1.5 bg-surface-container-low hover:bg-surface-container rounded-lg font-label-sm text-label-sm text-on-surface focus:outline-none cursor-pointer"
+                    id="filter-language"
+                    name="filter-language"
+                    aria-label="Filter by service language"
+                  >
+                    <option value="all">Languages: All</option>
+                    <option value="bilingual">Bilingual (EN / ES)</option>
+                    <option value="spanish">Spanish Available</option>
+                    <option value="mandarin">Mandarin Support</option>
+                  </select>
+                  <span
+                    class="material-symbols-outlined pointer-events-none absolute right-2 top-1/2 -translate-y-1/2 text-[16px] text-outline"
+                    aria-hidden="true"
+                    >expand_more</span
+                  >
+                </div>
+                <span
+                  class="hidden md:inline-block w-1.5 h-1.5 rounded-full bg-outline-variant mx-1"
+                ></span>
+                <span
+                  class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-1"
+                >
+                  <span
+                    class="material-symbols-outlined text-[16px] text-secondary"
+                    aria-hidden="true"
+                    >check_circle</span
+                  >
+                  <span id="inline-resource-count">Showing 6 demo programs</span>
+                </span>
+                <button type="button" id="ward-chip" class="ward-chip" hidden><span id="ward-chip-label"></span><span class="material-symbols-outlined text-[14px]" aria-hidden="true">close</span></button>
+              </div>
+              <!-- Sorting -->
+              <div class="flex items-center gap-2 ml-auto">
+                <label
+                  class="font-label-sm text-label-sm text-on-surface-variant whitespace-nowrap"
+                  for="filter-sort"
+                  >Sort by:</label
+                >
+                <div class="relative">
+                  <select
+                    class="appearance-none pl-3 pr-8 py-1.5 bg-surface-container-low hover:bg-surface-container rounded-lg font-label-sm text-label-sm font-semibold text-primary focus:outline-none cursor-pointer"
+                    id="filter-sort"
+                    name="filter-sort"
+                  >
+                    <option value="nearest">Nearest First</option>
+                    <option value="recent">Recently Updated</option>
+                    <option value="alpha">A to Z Organization</option>
+                  </select>
+                  <span
+                    class="material-symbols-outlined pointer-events-none absolute right-2 top-1/2 -translate-y-1/2 text-[16px] text-outline"
+                    aria-hidden="true"
+                    >expand_more</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Main Content Layout (Grid + Right Hand Quick Assistance Sidebar) -->
+        <div class="w-full max-w-7xl mx-auto px-gutter py-space-xl">
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl">
+            <!-- Left / Center Listings Column (8 of 12 cols) -->
+            <section
+              aria-label="Directory Results"
+              class="lg:col-span-8 flex flex-col gap-space-lg"
+            >
+              <!-- Live Alert Ribbon for Emergency Operations -->
+              <div
+                class="p-space-md rounded-2xl bg-secondary-container text-on-secondary-container shadow-sm flex items-start gap-space-sm"
+              >
+                <span
+                  class="material-symbols-outlined text-[24px] text-secondary shrink-0 mt-0.5"
+                  aria-hidden="true"
+                  >campaign</span
+                >
+                <div class="flex-1">
+                  <p class="font-label-md text-label-md font-bold">
+                    Explore Seasonal Support — Demo Program
+                  </p>
+                  <p
+                    class="font-body-sm text-body-sm text-on-secondary-fixed-variant mt-0.5"
+                  >
+                    See how a community directory could highlight seasonal
+                    support. Program information and availability are
+                    illustrative.
+                  </p>
+                </div>
+                <button
+                  class="shrink-0 px-3 py-1 bg-surface-container-lowest text-on-secondary-container hover:bg-secondary-fixed rounded-lg font-label-sm text-label-sm transition-colors"
+                  type="button"
+                  data-info="seasonal"
+                >
+                  Details
+                </button>
+              </div>
+              <!-- Cards List Container -->
+              <div
+                class="grid grid-cols-1 md:grid-cols-2 gap-space-lg"
+                id="resource-cards-grid"
+              ></div>
+              <p id="resource-empty" class="empty-state" hidden="">
+                No resources match your search. Try another keyword or reset the
+                filters.
+              </p>
+              <p
+                id="resource-count"
+                class="result-count"
+                role="status"
+                aria-live="polite"
+              ></p>
+              <div id="resource-map" hidden=""></div>
+              <!-- Directory Pagination / Load More Bar -->
+            </section>
+            <!-- Right Hand Quick Assistance Column (4 of 12 cols) -->
+            <aside
+              aria-label="Quick Civic Assistance Panel"
+              class="lg:col-span-4 flex flex-col gap-space-lg"
+            >
+              <!-- Urgent Assistance Emergency Box -->
+              <div
+                class="bg-gradient-to-br from-tertiary-container to-tertiary text-on-tertiary rounded-2xl p-space-lg shadow-md flex flex-col gap-space-md relative overflow-hidden"
+              >
+                <div class="flex items-center gap-2">
+                  <span class="material-symbols-outlined" aria-hidden="true"
+                    >info</span
+                  ><span class="font-label-sm text-label-sm"
+                    >FICTIONAL DIRECTORY</span
+                  >
+                </div>
+                <h3 class="font-headline-sm text-headline-sm mt-3">
+                  About This Demonstration
+                </h3>
+                <p class="font-body-sm text-body-sm mt-2">
+                  These sample services are not connected to real organizations.
+                  Contact details, addresses, hours, and availability are
+                  fictional.
+                </p>
+                <div class="mt-4 space-y-3">
+                  <p class="font-label-md text-label-md">6 Sample Programs</p>
+                  <p class="font-body-sm text-body-sm">
+                    Search in English or Spanish
+                  </p>
+                  <p class="font-body-sm text-body-sm">
+                    Explore Accessible Service Cards
+                  </p>
+                </div>
+                <a
+                  href="contact.html"
+                  class="mt-5 inline-block px-4 py-3 rounded-xl bg-white text-primary font-label-md text-label-md"
+                  >Try the Contact Form</a
+                >
+              </div>
+              <!-- Download Printable Directory Booklet -->
+              <div
+                class="bg-surface-container-lowest rounded-2xl p-space-lg shadow-sm flex flex-col gap-space-sm"
+              >
+                <div class="flex items-start gap-space-sm">
+                  <div
+                    class="w-10 h-10 rounded-xl bg-secondary-container text-on-secondary-container flex items-center justify-center shrink-0"
+                  >
+                    <span
+                      class="material-symbols-outlined text-[24px]"
+                      aria-hidden="true"
+                      >menu_book</span
+                    >
+                  </div>
+                  <div>
+                    <h3 class="font-title-md text-title-md text-on-surface">
+                      Offline Printable Guide
+                    </h3>
+                    <p
+                      class="font-body-sm text-body-sm text-on-surface-variant mt-0.5"
+                    >
+                      Print a browser-friendly guide to the six fictional
+                      programs in this demonstration.
+                    </p>
+                  </div>
+                </div>
+                <div class="flex items-center gap-2 pt-2">
+                  <a
+                    class="flex-1 py-2.5 px-3 bg-surface-container-low hover:bg-surface-container text-primary rounded-xl font-label-md text-label-md text-center transition-colors flex items-center justify-center gap-1.5"
+                    href="#print"
+                    data-print="en"
+                  >
+                    <span
+                      class="material-symbols-outlined text-[18px]"
+                      aria-hidden="true"
+                      >download</span
+                    >
+                    <span>Print English Guide</span>
+                  </a>
+                  <a
+                    class="py-2.5 px-3 bg-surface-container-low hover:bg-surface-container text-primary rounded-xl font-label-md text-label-md text-center transition-colors"
+                    href="#print"
+                    data-print="es"
+                  >
+                    <span>Español</span>
+                  </a>
+                </div>
+              </div>
+              <!-- Community Contribution Callout -->
+              <div
+                class="bg-surface-container-lowest rounded-2xl p-space-lg shadow-sm flex flex-col gap-space-sm"
+              >
+                <div class="flex items-center gap-2 text-primary">
+                  <span
+                    class="material-symbols-outlined text-[22px]"
+                    aria-hidden="true"
+                    >add_circle</span
+                  >
+                  <h3 class="font-title-md text-title-md text-on-surface">
+                    Submit a Resource
+                  </h3>
+                </div>
+                <p
+                  class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed"
+                >
+                  Are you an organizer, nonprofit director, or service
+                  administrator? Submit a free or sliding-scale program to our
+                  verification board.
+                </p>
+                <a
+                  class="mt-2 w-full py-2.5 px-4 bg-primary text-on-primary hover:bg-primary-container rounded-xl font-label-md text-label-md text-center transition-colors shadow-sm flex items-center justify-center gap-2"
+                  data-path="submit-resource"
+                  href="contact.html?inquiry=organization"
+                >
+                  <span>Submit Verification Request</span>
+                  <span
+                    class="material-symbols-outlined text-[16px]"
+                    aria-hidden="true"
+                    >launch</span
+                  >
+                </a>
+              </div>
+              <!-- Interactive Map Preview Anchor -->
+              <div
+                class="bg-surface-container-lowest rounded-2xl overflow-hidden shadow-sm flex flex-col"
+              >
+                <div class="p-space-md flex items-center justify-between">
+                  <div class="flex items-center gap-2">
+                    <span
+                      class="material-symbols-outlined text-[20px] text-secondary"
+                      aria-hidden="true"
+                      >explore</span
+                    >
+                    <span class="font-title-md text-title-md text-on-surface"
+                      >Ward Coverage</span
+                    >
+                  </div>
+                  <span
+                    class="font-label-sm text-label-sm text-on-surface-variant"
+                    >Metro Service Area</span
+                  >
+                </div>
+                <!-- Location visualizer with Google Maps API data-location hook -->
+                <div
+                  class="w-full h-44 bg-cover bg-center relative map-preview"
+                  data-location="Civic Center, Public Square"
+                >
+                  <div
+                    class="absolute inset-0 bg-primary/20 backdrop-blur-[1px] flex items-center justify-center"
+                  >
+                    <span
+                      class="px-3 py-1.5 rounded-full bg-surface-container-lowest/90 font-label-sm text-label-sm text-primary shadow-md flex items-center gap-1"
+                    >
+                      <span
+                        class="material-symbols-outlined text-[16px] text-secondary"
+                        aria-hidden="true"
+                        >pin_drop</span
+                      >
+                      6 Demo Locations in Scope
+                    </span>
+                  </div>
+                </div>
+                <div class="p-3 bg-surface-container-low text-center">
+                  <button
+                    class="font-label-sm text-label-sm text-primary hover:underline font-semibold"
+                    type="button"
+                    data-map-resources=""
+                  >
+                    Open Interactive Fullscreen Map
+                  </button>
+                </div>
+              </div>
+            </aside>
+          </div>
+        </div>
+        <!-- Interactive Resource Details Modal (Hidden by default) -->
+      </div>
+    </main>
+    <footer
+      class="w-full bg-surface-container-low text-on-surface mt-space-xl shadow-[0_-1px_6px_rgba(0,0,0,0.02)]"
+    >
+      <div class="bg-secondary text-on-secondary">
+        <div
+          class="max-w-7xl mx-auto px-gutter py-space-sm flex flex-col sm:flex-row items-center justify-between gap-space-xs"
+        >
+          <div class="flex items-center gap-space-xs">
+            <span
+              class="material-symbols-outlined text-[18px]"
+              aria-hidden="true"
+              >support_agent</span
+            ><span class="font-label-sm text-label-sm font-semibold"
+              >Portfolio demo: organizations, locations, statistics, contacts,
+              and availability are fictional. Not a source of emergency
+              assistance.</span
+            >
+          </div>
+          <div class="font-label-sm text-label-sm text-on-secondary/90">
+            Explore in English or Spanish
+          </div>
+        </div>
+      </div>
+      <div class="max-w-7xl mx-auto px-gutter py-space-xl">
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-space-xl mb-space-xl"
+        >
+          <div class="lg:col-span-2 space-y-space-md">
+            <div class="flex items-center gap-space-sm">
+              <img
+                alt=""
+                class="h-8 w-auto object-contain"
+                src="assets/favicon.svg"
+                decoding="async"
+                loading="lazy"
+                width="30"
+              /><span
+                class="font-headline-sm text-headline-sm text-primary tracking-tight"
+                >CommunityConnect</span
+              >
+            </div>
+            <p
+              class="font-body-md text-body-md text-on-surface-variant max-w-md"
+            >
+              Bridging neighborhood residents, community organizers, and civic
+              agencies through verified, accessible public resources and
+              bilingual neighborhood assistance.
+            </p>
+            <div class="flex items-center gap-space-sm">
+              <span
+                class="inline-flex items-center gap-1.5 px-space-sm py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm"
+                ><span
+                  class="material-symbols-outlined text-[16px]"
+                  aria-hidden="true"
+                  >verified</span
+                >Sample Community Directory</span
+              ><span
+                class="inline-flex items-center gap-1.5 px-space-sm py-1 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm"
+                ><span
+                  class="material-symbols-outlined text-[16px]"
+                  aria-hidden="true"
+                  >translate</span
+                >Bilingual (EN / ES)</span
+              >
+            </div>
+          </div>
+          <div>
+            <h4 class="font-title-md text-title-md text-on-surface mb-space-md">
+              Resource Categories
+            </h4>
+            <ul
+              class="space-y-space-sm font-body-sm text-body-sm text-on-surface-variant"
+            >
+              <li>
+                <a
+                  class="hover:text-primary transition-colors"
+                  data-path="education-resources"
+                  href="resources.html?category=education"
+                  >Education &amp; Youth</a
+                >
+              </li>
+              <li>
+                <a
+                  class="hover:text-primary transition-colors"
+                  data-path="healthcare-access"
+                  href="resources.html?category=healthcare"
+                  >Healthcare &amp; Clinics</a
+                >
+              </li>
+              <li>
+                <a
+                  class="hover:text-primary transition-colors"
+                  data-path="housing-navigation"
+                  href="resources.html?category=housing"
+                  >Housing &amp; Shelter</a
+                >
+              </li>
+              <li>
+                <a
+                  class="hover:text-primary transition-colors"
+                  data-path="food-assistance"
+                  href="resources.html?category=food"
+                  >Food Assistance</a
+                >
+              </li>
+              <li>
+                <a
+                  class="hover:text-primary transition-colors"
+                  data-path="employment-support"
+                  href="resources.html?category=employment"
+                  >Employment &amp; Training</a
+                >
+              </li>
+              <li>
+                <a
+                  class="hover:text-primary transition-colors"
+                  data-path="community-support"
+                  href="resources.html?category=community"
+                  >Community Support</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="font-title-md text-title-md text-on-surface mb-space-md">
+              Quick Links
+            </h4>
+            <ul
+              class="space-y-space-sm font-body-sm text-body-sm text-on-surface-variant"
+            >
+              <li>
+                <a
+                  class="hover:text-primary transition-colors"
+                  data-path="events"
+                  href="events.html"
+                  >Events Calendar</a
+                >
+              </li>
+              <li>
+                <a
+                  class="hover:text-primary transition-colors"
+                  data-path="volunteer-hub"
+                  href="index.html#volunteer"
+                  >Volunteer Hub</a
+                >
+              </li>
+              <li>
+                <a
+                  class="hover:text-primary transition-colors"
+                  data-path="impact-report"
+                  href="about.html#impact"
+                  >Sample Impact Report 2025</a
+                >
+              </li>
+              <li>
+                <a
+                  class="hover:text-primary transition-colors"
+                  data-path="partner-with-us"
+                  href="contact.html"
+                  >Partner With Us</a
+                >
+              </li>
+              <li>
+                <a
+                  class="hover:text-primary transition-colors"
+                  data-path="civic-data"
+                  href="#civic-data"
+                  data-info="civic-data"
+                  >Demo Resource Data</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="font-title-md text-title-md text-on-surface mb-space-md">
+              Civic Helpline
+            </h4>
+            <div
+              class="space-y-space-sm font-body-sm text-body-sm text-on-surface-variant"
+            >
+              <div class="flex items-start gap-space-xs">
+                <span
+                  class="material-symbols-outlined text-[18px] text-primary shrink-0"
+                  aria-hidden="true"
+                  >call</span
+                >
+                <div>
+                  <span class="font-semibold text-on-surface"
+                    >Community Helpline</span
+                  >
+                  <p>(202) 555-0100 · Demo</p>
+                </div>
+              </div>
+              <div class="flex items-start gap-space-xs">
+                <span
+                  class="material-symbols-outlined text-[18px] text-primary shrink-0"
+                  aria-hidden="true"
+                  >location_on</span
+                >
+                <div>
+                  <span class="font-semibold text-on-surface"
+                    >Civic Center Office</span
+                  >
+                  <p>450 Public Square, Suite 200</p>
+                </div>
+              </div>
+              <div class="flex items-start gap-space-xs">
+                <span
+                  class="material-symbols-outlined text-[18px] text-primary shrink-0"
+                  aria-hidden="true"
+                  >mail</span
+                >
+                <div>
+                  <span class="font-semibold text-on-surface"
+                    >Direct Inquiries</span
+                  >
+                  <p>hello@communityconnect.example</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="pt-space-lg flex flex-col md:flex-row items-center justify-between gap-space-md text-on-surface-variant font-label-sm text-label-sm"
+        >
+          <p>© 2026 CommunityConnect · Portfolio demonstration</p>
+          <div class="flex items-center gap-space-md">
+            <a
+              class="hover:text-on-surface transition-colors"
+              data-path="privacy-policy"
+              href="#privacy-policy"
+              data-info="privacy-policy"
+              >Privacy Policy</a
+            ><a
+              class="hover:text-on-surface transition-colors"
+              data-path="terms-of-service"
+              href="#terms-of-service"
+              data-info="terms-of-service"
+              >Terms of Service</a
+            ><a
+              class="hover:text-on-surface transition-colors"
+              data-path="accessibility"
+              href="#accessibility"
+              data-info="accessibility"
+              >Accessibility</a
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+    <nav class="bottom-nav" aria-label="Quick navigation">
+      <a href="index.html"
+        ><span class="material-symbols-outlined" aria-hidden="true">home</span
+        ><span>Home</span></a
+      ><a href="resources.html" aria-current="page"
+        ><span class="material-symbols-outlined" aria-hidden="true">search</span
+        ><span>Resources</span></a
+      ><a href="events.html"
+        ><span class="material-symbols-outlined" aria-hidden="true"
+          >calendar_month</span
+        ><span>Events</span></a
+      ><a href="about.html"
+        ><span class="material-symbols-outlined" aria-hidden="true">groups</span
+        ><span>About</span></a
+      ><a href="contact.html"
+        ><span class="material-symbols-outlined" aria-hidden="true">mail</span
+        ><span>Contact</span></a
+      >
+    </nav>
+    <dialog id="detail-dialog" aria-labelledby="dialog-title">
+      <div class="dialog-top">
+        <span class="eyebrow">CommunityConnect · Demo</span
+        ><button type="button" data-close-dialog="" aria-label="Close dialog">
+          <span class="material-symbols-outlined" aria-hidden="true"
+            >close</span
+          >
+        </button>
+      </div>
+      <div id="dialog-content"></div>
+    </dialog>
+  </body>
+</html>

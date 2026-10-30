@@ -1,0 +1,50 @@
+[
+  {
+    "scenario": "index-1440px",
+    "violations": []
+  },
+  {
+    "scenario": "resources-1440px",
+    "violations": []
+  },
+  {
+    "scenario": "events-1440px",
+    "violations": []
+  },
+  {
+    "scenario": "about-1440px",
+    "violations": []
+  },
+  {
+    "scenario": "contact-1440px",
+    "violations": []
+  },
+  {
+    "scenario": "index-390px",
+    "violations": []
+  },
+  {
+    "scenario": "resources-390px",
+    "violations": []
+  },
+  {
+    "scenario": "events-390px",
+    "violations": []
+  },
+  {
+    "scenario": "about-390px",
+    "violations": []
+  },
+  {
+    "scenario": "contact-390px",
+    "violations": []
+  },
+  {
+    "scenario": "resource-dialog-mobile",
+    "violations": []
+  },
+  {
+    "scenario": "event-dialog-mobile",
+    "violations": []
+  }
+]

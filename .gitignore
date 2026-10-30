@@ -1,0 +1,10 @@
+node_modules/
+.cache/
+dist/
+.DS_Store
+playwright-report/
+test-results/
+*.log
+# Preserve the original design files locally without adding large exports to a repository.
+stitch_communityconnect_platform.zip
+design-reference/
